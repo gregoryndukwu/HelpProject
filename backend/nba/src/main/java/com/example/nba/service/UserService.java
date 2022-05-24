@@ -19,4 +19,5 @@ public interface UserService {
     String forgotPassword(String email) throws Exception;
     User resetPassword(String token, String password) throws Exception;
 
+    List<UserDTO> findAllWhereDeletedAtNotNull();
 }
